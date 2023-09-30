@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Prime Number Finder</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Prime Number Finder</h1>
+        <div class="input-section">
+            <label for="start">Start Range:</label>
+            <input type="number" id="start" placeholder="Enter start range">
+            <label for="end">End Range:</label>
+            <input type="number" id="end" placeholder="Enter end range">
+            <button id="calculate" type="submit">Calculate Primes</button>
+        </div>
+        <div class="result-section">
+            <p>Prime Numbers Found: <span id="primeCount">0</span></p>
+            <button id="details">Details</button>
+            <div id="detailsModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Performance Metrics</h2>
+                    <table>
+                        <tr>
+                            <td>Time to Calculate Primes</td>
+                            <td id="timeToCalculate">0 ms</td>
+                        </tr>
+                        <tr>
+                            <td>Time to Check a Single Number</td>
+                            <td id="timeToCheckSingle">0 ms</td>
+                        </tr>
+                        <tr>
+                            <td>Average Time to Check a Prime</td>
+                            <td id="averageTime">0 ms</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
